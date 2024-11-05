@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboardstyle.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <h1>Creating Moments</h1>
+      <p>Bringing Your Ideas to Life</p>
+    </header>
+
+    <div class="stats">
+      <div class="stat">
+        <h2 id="completed">12</h2>
+        <p>Events Completed</p>
+      </div>
+      <div class="stat">
+        <h2 id="inProgress">5</h2>
+        <p>In Progress</p>
+      </div>
+    </div>
+
+    <div class="tiles">
+      <div class="tile" id="addEvent">
+        <span class="emoji">📝</span>
+        <h3>Add Event Details</h3>
+      </div>
+    
+      <div class="tile" id="viewProgress">
+        <span class="emoji">📊</span>
+        <h3>View Progress</h3>
+      </div>
+    </div>
+    
+    <script>
+      document.getElementById('addEvent').addEventListener('click', () => {
+        window.location.href = 'Details.html';
+      });
+    
+      document.getElementById('viewProgress').addEventListener('click', () => {
+        window.location.href = 'Progress.html';
+      });
+    </script>
+</body>
+</html>
